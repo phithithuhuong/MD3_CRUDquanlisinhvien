@@ -1,0 +1,8 @@
+{
+  "name": "CRUDquanlisinhvien",
+  "version": "1.0.0",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
