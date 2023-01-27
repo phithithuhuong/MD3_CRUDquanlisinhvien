@@ -1,6 +1,8 @@
-const studentHandle= require('./handle/studentHandle');
-const router= {
+const studentHandle = require('./handle/studentHandle');
+const router = {
     '/home': studentHandle.showHome,
-    '/student':studentHandle.listStudent
+    '/student': studentHandle.listStudent,
+    '/create': studentHandle.create,
+    '/delete/:id': studentHandle.remove
 }
-module.exports= router
+module.exports = router

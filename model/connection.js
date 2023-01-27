@@ -15,20 +15,15 @@ class Connection{
     }
     static connecting (){
         return new Promise((resolve, reject) => {
-            Connection.getConnection().connect(err=>{
+            Connection.getConnection().connect((err,result)=>{
                 if (err){
                     reject(err)
                 } else {
-                    resolve('connection success !')
+                    resolve(result)
                 }
             })
         })
 
     }
 }
-Connection.connecting().then((result)=>{
-    console.log(result)
-}).catch(err=>{
-    console.log(err)
-})
 module.exports = Connection
